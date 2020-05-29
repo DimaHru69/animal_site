@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+    font-family: "Caladea", serif;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer {
+    flex: 0 0 auto;
+}
+ul {
+    list-style: none;
+}
+//start header
+.header {
+    min-height: 668px;
+    height: 900px;
+    background: url(../img/bg_1.jpg) top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+}
+.header__top-inner {
+    padding-top: 60px;
+    text-align: center;
+}
+.header__logo-text {
+    text-decoration: none;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 400px;
+    color: #bf826b;
+}
+.header__top-inner > p {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400px;
+    color: rgb(219, 203, 197);
+}
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+.header__menu a {
+    text-decoration: none;
+    list-style: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(219, 203, 197);
+    margin-left: 43px;
+    transition: 0.4s;
+}
+.header__menu a:hover {
+    color: #f2c49b;
+}
+.header__info {
+    width: 470px;
+    height: 325px;
+    margin-left: 265px;
+    padding-top: 250px;
+}
+.header__info > h1 {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 400px;
+    color: rgb(219, 203, 197);
+    width: 300px;
+}
+.header__info > p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400px;
+    color: rgb(219, 203, 197);
+    width: 600px;
+    padding-bottom: 50px;
+}
+.header__info-buttom {
+    width: 170px;
+    height: 45px;
+    background: rgb(219, 203, 197);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.header__info-buttom > a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    color: rgb(124, 85, 71);
+}
+.header__info-buttom:hover {
+    background-color: #fff;
+}
+//end header
+
+//start about
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.about__inner-info {
+    padding-left: 75px;
+    width: 350px;
+}
+.about__inner-info > h1 {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 400px;
+    color: #40211e;
+}
+.about__inner-info > p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400px;
+    color: #40211e;
+    padding-bottom: 25px;
+}
+//end about
+
+//start slider
+.slider__item-box {
+    text-align: center;
+    width: 168px;
+    height: 350px;
+    background-color: #fff;
+    
+    transition: 1s;
+}
+.slider__item-box > img {
+    margin: auto;
+}
+.slider__item-box > h1 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400px;
+    color: #40211e;
+}
+.slick-list {
+    overflow: hidden;
+    background-size: contain;
+}
+.slick-track {
+    display: flex;
+}
+.slider_box {
+    background-color: #f2f2f2;
+    height: 650px;
+}
+.slider {
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;   
+    padding-top: 150px;
+}
+.slider__item{
+  padding-left: 60px;
+}
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -25px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+}
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url(../img/arrow-left.png) 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url(../img/arrow-right.png) 0 0 / 100% no-repeat;
+}
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px 25px 0px;
+}
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+}
+.slider .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    outline: none;
+}
+.slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.slider__buttom {
+    width: 140px;
+    height: 35px;
+    background: #fff;
+    border: 2px solid #f2b999;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 1s;
+}
+.slider__item-box > button > a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400px;
+    color: #40211e;
+}
+.slider__item-box > button:hover{
+    background-color: #F6E0D1;
+}
+//end slider
