@@ -144,11 +144,11 @@ ul {
 //start slider
 .slider__item-box {
     text-align: center;
-    width: 168px;
+    width: 220px;
     height: 350px;
     background-color: #fff;
-    
     transition: 1s;
+    
 }
 .slider__item-box > img {
     margin: auto;
@@ -173,11 +173,12 @@ ul {
 .slider {
     width: 50%;
     margin: 0 auto;
-    overflow: hidden;   
+    overflow: hidden;
     padding-top: 150px;
+    padding-bottom: 25px;
 }
-.slider__item{
-  padding-left: 60px;
+.slider__item {
+    padding-left: 60px;
 }
 .slider .slick-arrow {
     position: absolute;
@@ -187,6 +188,7 @@ ul {
     font-size: 0;
     height: 50px;
     width: 50px;
+    border-radius: 50%;
 }
 .slider .slick-arrow.slick-prev {
     left: 0;
@@ -234,7 +236,170 @@ ul {
     font-weight: 400px;
     color: #40211e;
 }
-.slider__item-box > button:hover{
-    background-color: #F6E0D1;
+.slider__item-box > button:hover {
+    background-color: #f6e0d1;
+}
+.slider-gte__buttom {
+    margin-left: 45.5%;
+    width: 180px;
+    height: 35px;
+    background: #fff;
+    border: 2px solid #f2b999;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 1s;
+}
+.slider-gte__buttom > a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400px;
+    color: #40211e;
+}
+.slider-gte__buttom:hover {
+    background-color: #f6e0d1;
 }
 //end slider
+
+//start shelter
+.shelter__box-title {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 400px;
+    color: #40211e;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 325px;
+    margin: 0 auto;
+    text-align: center;
+}
+.shelter__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+.shelter__inner-box {
+    flex: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.shelter__inner-box > h1 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400px;
+    color: #40211e;
+}
+
+//end shelter
+
+//start donation
+.donation {
+    background-color: #f6f6f6;
+    height: 435px;
+}
+.donation__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+.donation__inner-info > h1 {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 400px;
+    color: #40211e;
+    width: 400px;
+}
+.donation__inner-info > p {
+    width: 500px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400px;
+    color: #40211e;
+    padding-bottom: 25px;
+}
+.donation__inner-info-card {
+    display: flex;
+    align-items: center;
+    width: 260px;
+    height: 40px;
+    background-color: #f1cdb3;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+.donation__inner-info-card > img {
+    margin-left: 15px;
+    margin-right: 17px;
+}
+.donation__inner-info > h2 {
+    width: 500px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400px;
+    color: #a0a0a0;
+    padding-bottom: 25px;
+}
+//end donation
+
+//footer start
+.footer {
+    height: 365px; /* Высота блока */
+    background: url(../img/bg_2.jpg) 100% 100% no-repeat; /* Добавляем фон */
+    background-size: cover; /* Масштабируем фон */
+    width: 100%;
+}
+.footer__box{
+   width: 1000px;
+    margin: 0 auto;
+}
+.footer__inner{
+    display: flex;
+    padding-top: 48px;
+}
+.footer__inner-left-content {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    width: 250px;
+}
+.footer__inner-left-title {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 400px;
+    color: #dbcbc5;
+    width: 350px;
+}
+.footer__inner-left-content > a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400px;
+    color: #dbcbc5;
+    padding-left: 15px;
+}
+.footer__inner-right-title{
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 400px;
+    color: #dbcbc5;
+    width: 350px;
+}
+.footer__inner-right-content{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    width: 250px;
+}
+.footer__inner-right-content>p{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400px;
+    color: #dbcbc5;
+    padding-left: 15px;
+}
+//footer end
